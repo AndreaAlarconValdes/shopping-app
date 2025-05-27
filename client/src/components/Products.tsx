@@ -6,6 +6,7 @@ type Product = {
   id: number;
   name: string;
   category: "ring" | "necklace" | "bracelete" | "earring";
+  material: "gold" | "silver";
   price: number;
   image: string;
   modelImage?: string;
@@ -13,9 +14,10 @@ type Product = {
 
 type ProductsProps = {
   category?: Product["category"];
+  material?: Product["material"];
 };
 
-const Products: React.FC<ProductsProps> = ({ category }) => {
+const Products: React.FC<ProductsProps> = ({ category , material}) => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -32,9 +34,11 @@ const Products: React.FC<ProductsProps> = ({ category }) => {
       });
   }, []);
 
-  const filteredProducts = category
-    ? products.filter((product) => product.category === category)
-    : products;
+  const filteredProducts = products.filter((product) => {
+    const categoryMatch = category ? product.category === category : true;
+    const materialMatch = material ? product.material === material : true;
+    return categoryMatch && materialMatch;
+  });
 
   if (loading) {
     return <p>Cargando productos...</p>;

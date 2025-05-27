@@ -6,6 +6,7 @@ type Product = {
   id: number;
   name: string;
   category: "ring" | "necklace" | "bracelete" | "earring";
+  material: "gold" | "silver";
   price: number;
   image: string;
   modelImage?: string;
@@ -18,7 +19,8 @@ let products: Product[] = [
     category: "ring",
     price: 48,
     image: "http://localhost:4000/images/zahara-ring.jpg",
-    modelImage:"http://localhost:4000/images/zahara-model-ring.jpg",
+    modelImage: "http://localhost:4000/images/zahara-model-ring.jpg",
+    material: "gold",
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ let products: Product[] = [
     price: 48,
     image: "http://localhost:4000/images/lira-ring.jpg",
     modelImage: "http://localhost:4000/images/lira-model-ring.jpg",
+    material: "gold",
   },
   {
     id: 3,
@@ -35,6 +38,7 @@ let products: Product[] = [
     price: 48,
     image: "http://localhost:4000/images/lumina-ring.jpg",
     modelImage: "http://localhost:4000/images/lumina-model-ring.jpg",
+    material: "gold",
   },
   {
     id: 4,
@@ -43,6 +47,7 @@ let products: Product[] = [
     price: 48,
     image: "http://localhost:4000/images/eclat-ring.jpg",
     modelImage: "http://localhost:4000/images/eclat-model-ring.jpg",
+    material: "gold",
   },
   {
     id: 5,
@@ -51,6 +56,7 @@ let products: Product[] = [
     price: 48,
     image: "http://localhost:4000/images/stone-ring.jpg",
     modelImage: "http://localhost:4000/images/stone-model-ring.jpg",
+    material: "gold",
   },
   {
     id: 6,
@@ -59,6 +65,7 @@ let products: Product[] = [
     price: 35,
     image: "http://localhost:4000/images/solis-ring.jpg",
     modelImage: "http://localhost:4000/images/solis-model-ring.jpg",
+    material: "gold",
   },
   {
     id: 7,
@@ -67,6 +74,7 @@ let products: Product[] = [
     price: 48,
     image: "http://localhost:4000/images/jade-ring.jpg",
     modelImage: "http://localhost:4000/images/jade-model-ring.jpg",
+    material: "gold",
   },
   {
     id: 8,
@@ -75,6 +83,7 @@ let products: Product[] = [
     price: 48,
     image: "http://localhost:4000/images/zafiro-ring.jpg",
     modelImage: "http://localhost:4000/images/zafiro-model-ring.jpg",
+    material: "gold",
   },
   {
     id: 9,
@@ -82,6 +91,7 @@ let products: Product[] = [
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/sun-necklace.jpg",
+    material: "gold",
   },
   {
     id: 10,
@@ -89,6 +99,7 @@ let products: Product[] = [
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/shining-necklace.jpg",
+    material: "gold",
   },
   {
     id: 11,
@@ -96,6 +107,7 @@ let products: Product[] = [
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/sea-pearls-necklace.jpg",
+    material: "gold",
   },
   {
     id: 12,
@@ -103,6 +115,7 @@ let products: Product[] = [
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/rainbow-necklace.jpg",
+    material: "gold",
   },
   {
     id: 13,
@@ -110,6 +123,7 @@ let products: Product[] = [
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/nazar-necklace.jpg",
+    material: "gold",
   },
   {
     id: 14,
@@ -117,6 +131,7 @@ let products: Product[] = [
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/ireland-necklace.jpg",
+    material: "gold",
   },
   {
     id: 15,
@@ -124,6 +139,7 @@ let products: Product[] = [
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/bali-necklace.jpg",
+    material: "gold",
   },
   {
     id: 16,
@@ -131,6 +147,7 @@ let products: Product[] = [
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/armonia-necklace.jpg",
+    material: "gold",
   },
   {
     id: 17,
@@ -138,6 +155,7 @@ let products: Product[] = [
     category: "bracelete",
     price: 48,
     image: "http://localhost:4000/images/aurum-bracelete.jpg",
+    material: "gold",
   },
   {
     id: 18,
@@ -145,6 +163,7 @@ let products: Product[] = [
     category: "bracelete",
     price: 48,
     image: "http://localhost:4000/images/elara-bracelete.jpg",
+    material: "gold",
   },
   {
     id: 19,
@@ -152,6 +171,7 @@ let products: Product[] = [
     category: "bracelete",
     price: 48,
     image: "http://localhost:4000/images/fall-bracelete.jpg",
+    material: "gold",
   },
   {
     id: 20,
@@ -159,6 +179,7 @@ let products: Product[] = [
     category: "bracelete",
     price: 48,
     image: "http://localhost:4000/images/inicial-bracelete.jpg",
+    material: "gold",
   },
   {
     id: 21,
@@ -166,6 +187,7 @@ let products: Product[] = [
     category: "bracelete",
     price: 48,
     image: "http://localhost:4000/images/les-soleils-bracelete.jpg",
+    material: "gold",
   },
   {
     id: 22,
@@ -173,6 +195,7 @@ let products: Product[] = [
     category: "bracelete",
     price: 48,
     image: "http://localhost:4000/images/ribera-bracelete.jpg",
+    material: "gold",
   },
   {
     id: 23,
@@ -180,6 +203,7 @@ let products: Product[] = [
     category: "bracelete",
     price: 48,
     image: "http://localhost:4000/images/sun-bracelete.jpg",
+    material: "gold",
   },
   {
     id: 24,
@@ -187,8 +211,18 @@ let products: Product[] = [
     category: "bracelete",
     price: 48,
     image: "http://localhost:4000/images/rainbow-bracelete.jpg",
+    material: "gold",
   },
- 
+
+  {
+    id: 25,
+    name: "Love Ring",
+    category: "ring",
+    price: 48,
+    image: "http://localhost:4000/images/love-ring.jpg",
+    modelImage: "http://localhost:4000/images/love-model-ring.jpg",
+    material: "silver",
+  },
 ];
 
 router.get("/", (req, res) => {
@@ -198,7 +232,9 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   const id = Number(req.params.id);
   const product = products.find((p) => p.id === id);
-  product ? res.json(product) : res.status(404).json({ message: "No encontrado" });
+  product
+    ? res.json(product)
+    : res.status(404).json({ message: "No encontrado" });
 });
 
 router.post("/", (req, res) => {
