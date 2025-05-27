@@ -8,6 +8,7 @@ type Product = {
   category: "ring" | "necklace" | "bracelete" | "earring";
   price: number;
   image: string;
+  modelImage?: string;
 };
 
 let products: Product[] = [
@@ -17,6 +18,7 @@ let products: Product[] = [
     category: "ring",
     price: 48,
     image: "http://localhost:4000/images/zahara-ring.jpg",
+    modelImage:"http://localhost:4000/images/zahara-model-ring.jpg",
   },
   {
     id: 2,
@@ -24,6 +26,7 @@ let products: Product[] = [
     category: "ring",
     price: 48,
     image: "http://localhost:4000/images/lira-ring.jpg",
+    modelImage: "http://localhost:4000/images/lira-model-ring.jpg",
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ let products: Product[] = [
     category: "ring",
     price: 48,
     image: "http://localhost:4000/images/lumina-ring.jpg",
+    modelImage: "http://localhost:4000/images/lumina-model-ring.jpg",
   },
   {
     id: 4,
@@ -38,6 +42,7 @@ let products: Product[] = [
     category: "ring",
     price: 48,
     image: "http://localhost:4000/images/eclat-ring.jpg",
+    modelImage: "http://localhost:4000/images/eclat-model-ring.jpg",
   },
   {
     id: 5,
@@ -45,6 +50,7 @@ let products: Product[] = [
     category: "ring",
     price: 48,
     image: "http://localhost:4000/images/stone-ring.jpg",
+    modelImage: "http://localhost:4000/images/stone-model-ring.jpg",
   },
   {
     id: 6,
@@ -52,6 +58,7 @@ let products: Product[] = [
     category: "ring",
     price: 35,
     image: "http://localhost:4000/images/solis-ring.jpg",
+    modelImage: "http://localhost:4000/images/solis-model-ring.jpg",
   },
   {
     id: 7,
@@ -59,6 +66,7 @@ let products: Product[] = [
     category: "ring",
     price: 48,
     image: "http://localhost:4000/images/jade-ring.jpg",
+    modelImage: "http://localhost:4000/images/jade-model-ring.jpg",
   },
   {
     id: 8,
@@ -66,6 +74,7 @@ let products: Product[] = [
     category: "ring",
     price: 48,
     image: "http://localhost:4000/images/zafiro-ring.jpg",
+    modelImage: "http://localhost:4000/images/zafiro-model-ring.jpg",
   },
   {
     id: 9,

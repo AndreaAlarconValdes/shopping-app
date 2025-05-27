@@ -12,6 +12,14 @@ const routes: RouteGroup[] = [
     title: "All the jewels",
     options: ["rings", "bracelets", "earrings", "necklaces"],
   },
+  {
+    title: "Gold",
+    options: ["gold-rings", "gold-bracelets", "gold-earrings", "gold-necklaces"],
+  },
+  {
+    title: "Silver",
+    options: ["silver-rings", "silver-bracelets", "silver-earrings", "silver-necklaces"],
+  },
 ];
 
 export default function Navbar() {

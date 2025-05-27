@@ -1,47 +1,47 @@
 .wrapper-container {
   position: relative;
-  margin-top: 70px;
+  overflow: hidden;
 }
 
-.wrapper-container h1{
+.wrapper-container h1 {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   text-transform: uppercase;
   margin: 0;
   font-size: 26px;
-
   opacity: 0;
-  animation: show .5s ease-out forwards;
+  animation: show 0.5s ease-out forwards;
   animation-delay: 1s;
 }
 
-.wrapper-container h2{
-    font-family: 'Meow Script', cursive;
-    font-weight: 100;
-    font-size: 80px;
+.wrapper-container h2 {
+  font-family: 'Meow Script', cursive;
+  font-weight: 100;
+  font-size: 80px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  margin: 0;
+  opacity: 0;
+  animation: slideDownFade 0.5s ease-out forwards;
+}
 
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    margin: 0;
-
-    opacity: 0;
-    animation: slideDownFade .5s ease-out forwards;
-  }
 .image-wrapper {
-  width: 100vw;
-  height: 75vh;
   display: flex;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .image-wrapper img {
-  flex: 1;
-  object-fit: cover;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-width: calc(100% / 3);
 }

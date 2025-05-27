@@ -5,6 +5,8 @@ import Bracelets from "./pages/Bracelets";
 import Earrings from "./pages/Earrings";
 import Home from "./pages/Home";
 import Necklaces from "./pages/Necklaces";
+import ProductDetail from "./components/ProductDetail";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Route path="/bracelets" element={<Bracelets />} />
         <Route path="/earrings" element={<Earrings />} />
         <Route path="/necklaces" element={<Necklaces />} />
+        <Route path="/products/:id" element={<ProductDetail />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

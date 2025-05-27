@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Products.css";
 
 type Product = {
@@ -7,6 +8,7 @@ type Product = {
   category: "ring" | "necklace" | "bracelete" | "earring";
   price: number;
   image: string;
+  modelImage?: string;
 };
 
 type ProductsProps = {
@@ -41,13 +43,28 @@ const Products: React.FC<ProductsProps> = ({ category }) => {
   return (
     <div className="products-list">
       {filteredProducts.map((product) => (
-        <div key={product.id} className="product">
-          <img src={product.image} alt={product.name} />
+        <Link
+          key={product.id}
+          to={`/products/${product.id}`}
+          className="product"
+        >
+          <div className="product-image-wrapper">
+            <img
+              src={product.image}
+              alt={product.name}
+              className="main-image"
+            />
+            <img
+              src={product.modelImage}
+              alt={`${product.name} model`}
+              className="hover-image"
+            />
+          </div>
           <div>
             <h3>{product.name}</h3>
             <p>{product.price}€</p>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
