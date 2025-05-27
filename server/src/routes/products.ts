@@ -16,7 +16,7 @@ let products: Product[] = [
     name: "Anillo de diamantes",
     category: "anillo",
     price: 1500,
-    image: "https://example.com/anillo.jpg",
+    image: "http://localhost:4000/images/circle-ring.webp",
   },
   {
     id: 2,
