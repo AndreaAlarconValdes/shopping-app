@@ -1,5 +1,5 @@
-import './AllJewerly.css'
-import Products from '../components/Products'
+import '../AllJewerly.css'
+import Products from '../../components/Products'
 
 const Bracelets = () => {
   return (
