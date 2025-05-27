@@ -1,9 +1,12 @@
-import React from 'react'
+import './AllJewerly.css'
+import Products from '../components/Products'
 
 const Bracelets = () => {
   return (
-    <div>
+    <div className='all-jewerly'>
       <h1>Bracelets</h1>
+      <Products category="bracelete" />
+
     </div>
   )
 }

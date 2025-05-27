@@ -1,9 +1,11 @@
-import React from 'react'
+import './AllJewerly.css'
+import Products from '../components/Products'
 
 const Rings = () => {
   return (
-    <div>
+    <div className='all-jewerly'>
       <h1>Rings</h1>
+      <Products category="ring" />
     </div>
   )
 }

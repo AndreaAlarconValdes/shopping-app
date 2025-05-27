@@ -1,0 +1,13 @@
+.all-jewerly {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all-jewerly h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+}
