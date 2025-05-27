@@ -4,6 +4,7 @@ import Rings from "./pages/Rings";
 import Bracelets from "./pages/Bracelets";
 import Earrings from "./pages/Earrings";
 import Home from "./pages/Home";
+import Necklaces from "./pages/Necklaces";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/rings" element={<Rings />} />
         <Route path="/bracelets" element={<Bracelets />} />
         <Route path="/earrings" element={<Earrings />} />
+        <Route path="/necklaces" element={<Necklaces />} />
       </Routes>
     </BrowserRouter>
   );

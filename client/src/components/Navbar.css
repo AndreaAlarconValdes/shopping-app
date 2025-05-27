@@ -20,6 +20,7 @@
 
 .dropdown{
     position: relative;
+
 }
 
 .dropdown-title{
@@ -28,9 +29,13 @@ text-transform: uppercase;
 background-color: transparent;
 border: none;
 display: flex;
-align-items: center;
+align-items: flex-start;
+font-family: 'Poppins', sans-serif;
 }
 
+.dropdown-title span{
+    font-size: 18px;
+}
 .dropdown-menu{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 width: 100px;
@@ -51,4 +56,6 @@ margin: 0;
 
 .dropdown-link{
     text-transform: capitalize;
+font-family: 'Poppins', sans-serif;
+
 }
