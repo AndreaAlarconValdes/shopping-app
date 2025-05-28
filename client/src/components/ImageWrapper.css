@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-.wrapper-container h1 {
+.wrapper-container h2 {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -17,7 +17,7 @@
   animation-delay: 1s;
 }
 
-.wrapper-container h2 {
+.wrapper-container h3 {
   font-family: 'Meow Script', cursive;
   font-weight: 100;
   font-size: 80px;
@@ -44,4 +44,44 @@
   width: 100%;
   object-fit: cover;
   max-width: calc(100% / 3);
+}
+
+@media (max-width: 1024px) {
+  .img-2 {
+    display: none;
+  }
+
+  .image-wrapper img {
+    max-width: calc(100% / 2);
+  }
+
+.wrapper-container h2 {
+  font-size: 20px;
+}
+
+.wrapper-container h3 {
+  font-size: 70px;
+  bottom: 80px;
+
+}
+}
+
+@media (max-width: 600px) {
+  .img-2,
+  .img-3 {
+    display: none;
+  }
+
+  .image-wrapper img {
+    max-width: 100%;
+  }
+
+  .wrapper-container h2 {
+    font-size: 16px;
+  }
+  
+  .wrapper-container h3 {
+    font-size: 50px;
+
+  }
 }

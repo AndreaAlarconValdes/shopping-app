@@ -4,7 +4,7 @@ import Products from '../../components/Products'
 const GoldRings = () => {
   return (
     <div className='all-jewerly'>
-      <h1>Gold Rings</h1>
+      <h2>Gold Rings</h2>
       <Products category="ring" material='gold'/>
     </div>
   )

@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
 
-type Product = {
+export type Product = {
   id: number;
   name: string;
-  category: "ring" | "necklace" | "bracelete" | "earring";
+  category: "ring" | "necklace" | "bracelet" | "earring";
   material: "gold" | "silver";
   price: number;
   image: string;

@@ -5,27 +5,26 @@
   width: 100vw;
   z-index: 999;
   padding: 1rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+
 }
-.navbar-routes{
+.navbar-routes {
   display: flex;
   align-items: center;
   gap: 2rem;
+  padding-left: .5rem;
 }
 .logo {
   font-family: "Vina Sans", sans-serif;
   font-size: 30px;
-  padding-left: 2rem;
+}
+.bag{
+  padding-right: .5rem;
 }
 
-.bag {
-  padding-right: 2rem;
-
-}
 .dropdown {
   position: relative;
 }
@@ -66,6 +65,50 @@
 }
 
 .dropdown-link:hover {
-    scale: 1.1;
-    font-weight: 500;
+  scale: 1.1;
+  font-weight: 500;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .mobile-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .menu-icon {
+    display: flex;
+    cursor: pointer;
+  padding-left: .5rem;
+
+  }
+
+  .navbar-routes {
+    display: none;
+  }
+
+  .navbar-routes.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem .5rem;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    border: none;
+    box-shadow: none;
+  }
 }

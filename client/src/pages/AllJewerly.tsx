@@ -4,7 +4,7 @@ import './AllJewerly.css'
 const AllJewerly = () => {
   return (
     <div className='all-jewerly'>
-      <h1>All The Jewels</h1>
+      <h2>All The Jewels</h2>
       <Products/>
 
     </div>

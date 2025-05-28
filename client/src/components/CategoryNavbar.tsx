@@ -12,25 +12,21 @@ const categories: Category[] = [
   {
     name: "Rings",
     image: "./ring-cat.png",
-    width: 70,
     route: "/rings",
   },
   {
     name: "Bracelets",
-    image: "./bracelete-cat.png",
-    width: 80,
+    image: "./bracelet-cat.png",
     route: "/bracelets",
   },
   {
     name: "Earrings",
     image: "./earring-cat.png",
-    width: 90,
     route: "/earrings",
   },
   {
     name: "Necklaces",
     image: "./necklace-cat.png",
-    width: 80,
     route: "/necklaces",
   },
 ];
@@ -40,7 +36,7 @@ const CategoryNavbar = () => {
     <div className="category-navbar">
       {categories.map((cat) => (
         <Link to={cat.route} key={cat.name} className="category-item">
-          <img src={cat.image} alt={cat.name} width={cat.width}/>
+          <img src={cat.image} alt={cat.name}/>
           <p>{cat.name}</p>
         </Link>
       ))}

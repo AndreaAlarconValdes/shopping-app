@@ -4,7 +4,7 @@ import Products from '../../components/Products'
 const Earrings = () => {
   return (
     <div className='all-jewerly'>
-      <h1>Earrings</h1>
+      <h2>Earrings</h2>
       <Products category="earring" />
 
     </div>
