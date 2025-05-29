@@ -1,4 +1,4 @@
-# BrilLia — Jewelry Ecommerce
+# Brillia — Jewelry Ecommerce
 
 > Project in progress — *Coming soon...*
 
@@ -101,5 +101,6 @@ Feel free to connect with me or check out more of my work:
 <img src="https://img.shields.io/badge/Website-%23707070.svg?&style=for-the-badge&logo=google-cloud&logoColor=white" alt=website  />
 </a>
 </div>
+</br>
 
 > ✨ More details and a live preview will be available soon.
