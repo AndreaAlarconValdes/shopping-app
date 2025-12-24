@@ -10,7 +10,7 @@ type RouteGroup = {
 const routes: RouteGroup[] = [
   {
     title: "All the jewels",
-    options: ["rings", "bracelets", "earrings", "necklaces", "view-all"],
+    options: ["rings", "bracelets", "earrings", "necklaces", "collections"],
   },
   {
     title: "Gold",

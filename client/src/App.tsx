@@ -27,7 +27,7 @@ function App() {
         <Route path="/necklaces" element={<Necklaces />} />
         <Route path="/aurum" element={<Gold />} />
         <Route path="/luna" element={<Silver />} />
-        <Route path="/view-all" element={<AllJewerly />} />
+        <Route path="/collections" element={<AllJewerly />} />
         <Route path="/products/:id" element={<ProductDetail />} />
       </Routes>
       <Footer/>

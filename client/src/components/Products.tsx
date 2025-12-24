@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
+import { getProducts } from "../services/products";
 
 export type Product = {
   id: number;
@@ -22,14 +23,13 @@ const Products: React.FC<ProductsProps> = ({ category , material}) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/products")
-      .then((res) => res.json())
+   getProducts()
       .then((data) => {
         setProducts(data);
         setLoading(false);
       })
       .catch((error) => {
-        console.error("Error cargando productos:", error);
+        console.error(error);
         setLoading(false);
       });
   }, []);

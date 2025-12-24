@@ -11,17 +11,20 @@
   flex-direction: row-reverse;
 
 }
+
 .navbar-routes {
   display: flex;
   align-items: center;
   gap: 2rem;
   padding-left: .5rem;
 }
+
 .logo {
   font-family: "Vina Sans", sans-serif;
   font-size: 30px;
 }
-.bag{
+
+.bag {
   padding-right: .5rem;
 }
 
@@ -42,6 +45,7 @@
 .dropdown-title span {
   font-size: 18px;
 }
+
 .dropdown-menu {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   width: 150px;
@@ -79,19 +83,22 @@
     align-items: center;
   }
 }
+
 @media (max-width: 1024px) {
   .mobile-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   .navbar {
     flex-direction: column;
   }
+
   .menu-icon {
     display: flex;
     cursor: pointer;
-  padding-left: .5rem;
+    padding-left: .5rem;
 
   }
 

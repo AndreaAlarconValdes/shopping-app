@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./ProductDetail.css";
+import { getProductById } from "../services/products";
 type Product = {
   id: number;
   name: string;
@@ -16,8 +17,7 @@ const ProductDetail = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/products/${id}`)
-      .then((res) => res.json())
+      getProductById(id!)
       .then((data) => {
         setProduct(data);
         setLoading(false);

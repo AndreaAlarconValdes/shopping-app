@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Product } from "./Products";
+import { getProducts } from "../services/products";
 
 const ProductsBestSeller = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/products")
-      .then((res) => res.json())
+    getProducts()
       .then((data) => {
         setProducts(data);
         setLoading(false);

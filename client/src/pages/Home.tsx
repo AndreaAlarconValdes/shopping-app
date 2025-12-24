@@ -14,7 +14,7 @@ const Home = () => {
         <h2>MOST WANTED</h2>
         <ProductsBestSeller/>
         </div>
-        <a href="/view-all">Discover More</a>
+        <a href="/collections">Discover More</a>
     </div>
 
   )
