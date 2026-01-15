@@ -1,41 +1,40 @@
-# Brillia — Jewelry Ecommerce
+# Brillia — Jewelry E-Commerce Project
 
-> Project in progress — *Coming soon...*
+**Status:** Work in Progress ⚠️
 
-The project is currently under development. There's no live website available yet, but you can browse the source code in this repository.
+This is a **personal full-stack e-commerce project** built with **React + Node.js + TypeScript**, created for **educational purposes**. The project is still under development and not fully finished. Key features like **database integration** and **user authentication** are yet to be implemented.
 
+<!-- <img src="/client/public/brillia-mockup.png" alt=website  /> -->
 
-<img src="/client/public/brillia-mockup.png" alt=website  />
+## Project Overview
 
-*Elegant design meets modern shopping experience.*
+This project is an **online jewelry store** that allows users to browse different jewelry items and view details for each product. The goal is to practice **full-stack development** with a modern stack and to create a foundation for a complete e-commerce application.
 
-## 🚧 Project Status
+### Features Implemented
 
-🔧 Work in progress  
-🗂️ Source code is available for review  
-🌐 Live demo coming soon
+- **Product listing**: Browse all jewelry items available.
+- **Product details**: View detailed information for each product.
+- **Responsive design**: Works on desktop and mobile devices.
+- **TypeScript**: Strongly typed codebase for both client and server.
+- **Full-stack structure**: React frontend + Node.js backend.
+
+### Features Pending / To Do
+
+- **Database integration** (MongoDB, PostgreSQL, or other)
+- **User authentication** (signup/login, password hashing, JWT)
+- **Shopping cart**: Add/remove products to a cart (not persisted in a database yet).
+- **Order processing & checkout**
+- **Admin panel for product management**
+- **Persistent shopping cart**
+- **Payment gateway integration**
+
 
 ## 🛠 Technologies Used
 
-This project was built using the following tools and technologies:
-
-### Frontend:
-
-<p align="start">
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a> 
-<a href="https://vitejs.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="36" height="36" alt="Vite" /></a>
-<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
-<a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
-</p>
-
-### Backend:
-
-<p align="start">
-<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
-<a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" /></a>
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
-</p>
+- **Frontend**: React, TypeScript, Tailwind CSS (or other styling library)
+- **Backend**: Node.js, Express, TypeScript
+- **Bundler/Tooling**: Vite (frontend), ts-node / nodemon (backend)
+- **Future**: Database (MongoDB/PostgreSQL), Authentication (JWT/Passport)
 
 
 ## 🚀 Steps to run the project on your machine
@@ -84,7 +83,7 @@ npm run dev
 ### Start Frontend (React App)
 
 ```js
-npm start
+npm run start
 ```
 
 ## 📬 Contact & Socials
