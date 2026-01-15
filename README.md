@@ -10,7 +10,7 @@ This is a **personal full-stack e-commerce project** built with **React + Node.j
 
 This project is an **online jewelry store** that allows users to browse different jewelry items and view details for each product. The goal is to practice **full-stack development** with a modern stack and to create a foundation for a complete e-commerce application.
 
-### Features Implemented
+### ✅ Features Implemented
 
 - **Product listing**: Browse all jewelry items available.
 - **Product details**: View detailed information for each product.
@@ -18,7 +18,7 @@ This project is an **online jewelry store** that allows users to browse differen
 - **TypeScript**: Strongly typed codebase for both client and server.
 - **Full-stack structure**: React frontend + Node.js backend.
 
-### Features Pending / To Do
+### ⏳ Features Pending / To Do
 
 - **Database integration** (MongoDB, PostgreSQL, or other)
 - **User authentication** (signup/login, password hashing, JWT)
