@@ -2,16 +2,9 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
 import { getProducts } from "../services/products";
+import type { Product } from "../types/product";
 
-export type Product = {
-  id: number;
-  name: string;
-  category: "ring" | "necklace" | "bracelet" | "earring";
-  material: "gold" | "silver";
-  price: number;
-  image: string;
-  modelImage?: string;
-};
+export type { Product };
 
 type ProductsProps = {
   category?: Product["category"];
@@ -58,11 +51,13 @@ const Products: React.FC<ProductsProps> = ({ category , material}) => {
               alt={product.name}
               className="main-image"
             />
-            <img
-              src={product.modelImage}
-              alt={`${product.name} model`}
-              className="hover-image"
-            />
+            {product.modelImage && (
+              <img
+                src={product.modelImage}
+                alt={`${product.name} model`}
+                className="hover-image"
+              />
+            )}
           </div>
           <div>
             <h3>{product.name}</h3>

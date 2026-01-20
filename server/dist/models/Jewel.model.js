@@ -1,7 +1,8 @@
-import { model, Schema } from "mongoose";
-
-
-const jewelSchema = new Schema({
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Jewel = void 0;
+const mongoose_1 = require("mongoose");
+const jewelSchema = new mongoose_1.Schema({
     name: {
         type: String,
         required: true
@@ -27,6 +28,5 @@ const jewelSchema = new Schema({
     modelImage: {
         type: String,
     },
-})
-
-export const Jewel = model("Jewel", jewelSchema);
+});
+exports.Jewel = (0, mongoose_1.model)("Jewel", jewelSchema);

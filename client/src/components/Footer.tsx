@@ -9,16 +9,16 @@ const Footer = () => {
         </p>
         <div className="contact-info">
         <a href="mailto:alarconvaldes.a@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img src="./mail.svg" alt="" />
+            <img src="/mail.svg" alt="Email" />
         </a>
         <a href="https://www.linkedin.com/in/andreaalarconvaldes/" target="_blank" rel="noopener noreferrer">
-            <img src="./linkedin.svg" alt="" />
+            <img src="/linkedin.svg" alt="LinkedIn" />
         </a>
         <a href="https://github.com/AndreaAlarconValdes" target="_blank" rel="noopener noreferrer">
-            <img src="./github.svg" alt="" />
+            <img src="/github.svg" alt="GitHub" />
         </a>
         <a href="https://andreaalarconvaldes.github.io/portfolio-andrea/" target="_blank" rel="noopener noreferrer">
-            <img src="./link.svg" alt="" />
+            <img src="/link.svg" alt="Portfolio" />
         </a>
         </div>
       </div>

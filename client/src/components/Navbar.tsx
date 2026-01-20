@@ -65,9 +65,14 @@ export default function Navbar() {
             className="dropdown"
             key={route.title}
             onMouseEnter={() => toggleDropdown(index)}
-            onMouseLeave={() => toggleDropdown(-1)}
+            onMouseLeave={() => setOpenIndex(null)}
           >
-            <button className="dropdown-title">
+            <button
+              type="button"
+              className="dropdown-title"
+              onClick={() => toggleDropdown(index)}
+              aria-expanded={openIndex === index}
+            >
               {route.title}
               <span className="material-icons">
                 {openIndex === index ? "expand_less" : "expand_more"}

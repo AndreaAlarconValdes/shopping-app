@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Product } from "./Products";
+import type { Product } from "../types/product";
 import { getProducts } from "../services/products";
 
 const ProductsBestSeller = () => {

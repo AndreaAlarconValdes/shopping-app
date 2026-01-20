@@ -143,7 +143,7 @@ let products: Product[] = [
   },
   {
     id: 16,
-    name: "Armonia Becklace",
+    name: "Armonia Necklace",
     category: "necklace",
     price: 48,
     image: "http://localhost:4000/images/armonia-necklace.jpg",
@@ -246,23 +246,51 @@ router.get("/:id", (req, res) => {
     : res.status(404).json({ message: "Product not found" });
 });
 
-router.post("/", (req, res) => {
-  const product = req.body;
-  const ids = products.map(product => product.id);
-  const maxId = Math.max(...ids);
+const REQUIRED = ["name", "category", "material", "price", "image"] as const;
 
-  const newProduct = {
+router.post("/", (req, res): void => {
+  const body = req.body;
+  if (!body || typeof body !== "object") {
+    res.status(400).json({ message: "Cuerpo inválido" });
+    return;
+  }
+  for (const key of REQUIRED) {
+    if (body[key] == null || body[key] === "") {
+      res.status(400).json({ message: `Falta el campo requerido: ${key}` });
+      return;
+    }
+  }
+  const category = String(body.category);
+  if (!["ring", "necklace", "bracelet", "earring"].includes(category)) {
+    res.status(400).json({ message: "Categoría inválida" });
+    return;
+  }
+  const material = String(body.material);
+  if (!["gold", "silver"].includes(material)) {
+    res.status(400).json({ message: "Material inválido" });
+    return;
+  }
+  const price = Number(body.price);
+  if (Number.isNaN(price) || price < 0) {
+    res.status(400).json({ message: "Precio inválido" });
+    return;
+  }
+
+  const ids = products.map((p) => p.id);
+  const maxId = ids.length === 0 ? 0 : Math.max(...ids);
+
+  const newProduct: Product = {
     id: maxId + 1,
-    name: product.name,
-    category: product.category,
-    price: product.price,
-    image: product.image,
-    modelImage: product.modelImage,
-    material: product.material
+    name: String(body.name).trim(),
+    category: category as Product["category"],
+    material: material as Product["material"],
+    price,
+    image: String(body.image).trim(),
+    modelImage: body.modelImage != null ? String(body.modelImage).trim() : undefined,
   };
 
-  products = [...products, newProduct]
-  res.status(201).json(product);
+  products = [...products, newProduct];
+  res.status(201).json(newProduct);
 });
 
 // router.put("/:id", (req, res) => {

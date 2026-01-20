@@ -4,31 +4,14 @@ import "./CategoryNavbar.css";
 type Category = {
   name: string;
   image: string;
-  width?: number;
   route: string;
 };
 
 const categories: Category[] = [
-  {
-    name: "Rings",
-    image: "./ring-cat.png",
-    route: "/rings",
-  },
-  {
-    name: "Bracelets",
-    image: "./bracelet-cat.png",
-    route: "/bracelets",
-  },
-  {
-    name: "Earrings",
-    image: "./earring-cat.png",
-    route: "/earrings",
-  },
-  {
-    name: "Necklaces",
-    image: "./necklace-cat.png",
-    route: "/necklaces",
-  },
+  { name: "Rings", image: "/ring-cat.png", route: "/rings" },
+  { name: "Bracelets", image: "/bracelet-cat.png", route: "/bracelets" },
+  { name: "Earrings", image: "/earring-cat.png", route: "/earrings" },
+  { name: "Necklaces", image: "/necklace-cat.png", route: "/necklaces" },
 ];
 
 const CategoryNavbar = () => {
