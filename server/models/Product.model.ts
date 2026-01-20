@@ -1,7 +1,7 @@
 import { model, Schema } from "mongoose";
 
 
-const jewelSchema = new Schema({
+const productSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -29,4 +29,4 @@ const jewelSchema = new Schema({
     },
 })
 
-export const Jewel = model("Jewel", jewelSchema);
+export const Jewel = model("Jewel", productSchema);
