@@ -11,7 +11,6 @@ app.use(express.json());
 app.use(cors()); 
 app.use('/images', express.static('public/images'));
 app.use("/", productRoutes);
-// app.use("/", re)
 
 app.use((err: Error, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
   console.error(err);
